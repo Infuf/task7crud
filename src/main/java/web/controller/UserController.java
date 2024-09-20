@@ -22,6 +22,11 @@ public class UserController {
         return "user";
     }
 
+    @GetMapping("/")
+    public String main() {
+        return "redirect:/users";
+    }
+
     @GetMapping("/users/new")
     public String createUserForm(Model model) {
 
